@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Wedding Mad Libs</h1>
+    <div class="container" id="main">
+        <div id="inputDiv">
+            <h4>Welcome to the wedding, we're excited to have you here!</h4>
+            <h4>Fill this out for some "mad" laughs!</h4>
+            <br>
+            <div>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+            </div>
+            <img src="./img/wedding_rings.jpg" alt="Wedding rings" class="img">
+            <div>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="imsoadj">Adjective: </label>
+                <input type="text" id="imsoadj" name="imsoadj" placeholder="a describing word" required>
+            </div>
+            <div>
+                <label for="fromplace">Place: </label>
+                <input type="text" id="fromplace" name="fromplace" placeholder="a location" required>
+            </div>
+            <div>
+                <label for="inanoun">Noun: </label>
+                <input type="text" id="inanoun" name="inanoun" placeholder="a thing" required>
+            </div>
+            <div>
+                <label for="imtheadj">Adjective ending in -est: </label>
+                <input type="text" id="imtheadj" name="imtheadj" placeholder="a describing word" required>
+            </div>
+            <div>
+                <label for="foraadj">Adjective: </label>
+                <input type="text" id="foraadj" name="foraadj" placeholder="a describing word" required>
+            </div>
+            <div>
+                <label for="verbregularly">Verb: </label>
+                <input type="text" id="verbregularly" name="verbregularly" placeholder="an action word" required>
+            </div>
+            <div>
+                <label for="sweattheadj">Adjective: </label>
+                <input type="text" id="sweattheadj" name="sweattheadj" placeholder="a describing word" required>
+            </div>
+            <div>
+                <label for="goonnoun">Noun ending in -s: </label>
+                <input type="text" id="goonnoun" name="goonnoun" placeholder="things" required>
+            </div>
+            <div>
+                <label for="verbtoyour">Verb: </label>
+                <input type="text" id="verbtoyour" name="verbtoyour" placeholder="an action word" required>
+            </div>
+            <div>
+                <label for="lotsofemotion">Emotion: </label>
+                <input type="text" id="lotsofemotion" name="lotsofemotion" placeholder="an emotion" required>
+            </div>
+            <br>
+            <button onclick="generateMadLib()">Submit</button>
+        </div>
+        <div id="outputDiv" style="display: none;">
+            <p id="madLibOutput"></p>
+            <br>
+            <button type="reset" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
